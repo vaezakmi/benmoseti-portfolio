@@ -1,0 +1,122 @@
+/* Hero Section Base */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Particle Canvas */
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Hero Content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Hero Avatar */
+.hero-avatar {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00ffff99;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 25px #00ffff55;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Float Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Heading */
+.hero h1 {
+  font-size: 2.8rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #00ffff, #38bdf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Standard property */
+  color: transparent;
+}
+
+/* Description */
+.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* Social Icons */
+.hero-socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-socials a {
+  font-size: 1.8rem;
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.hero-socials a:hover {
+  color: #00ffff;
+  transform: scale(1.2);
+}
+
+/* Scroll Down Link */
+.scroll-down {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #94a3b8;
+  text-decoration: none;
+  animation: bounce 2s infinite;
+  margin-top: 1rem;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-avatar {
+    width: 100px;
+    height: 100px;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+  }
+}

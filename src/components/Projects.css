@@ -1,0 +1,89 @@
+/* src/components/Projects.css */
+.projects {
+  padding: 4rem 2rem;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+  color: #00ffff;
+  text-shadow: 0 0 8px #00ffff88;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 0 20px #00ffff44, 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.8rem;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.tech-stack {
+  margin-bottom: 1.2rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: linear-gradient(90deg, #00ffffaa, #3b82f6aa);
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin: 0.25rem;
+  color: #0f172a;
+  backdrop-filter: blur(4px);
+}
+
+.project-link {
+  display: inline-block;
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #00ffff55;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #ffffff;
+  border-bottom-color: #ffffff;
+}

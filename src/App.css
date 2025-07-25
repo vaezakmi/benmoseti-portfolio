@@ -1,0 +1,16 @@
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+  scroll-behavior: smooth;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
+section {
+  padding: 4rem 1rem;
+}
