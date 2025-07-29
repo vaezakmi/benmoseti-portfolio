@@ -23,6 +23,13 @@ const projects = [
     tech: ['React', 'Firebase'],
     link: '#',
   },
+  {
+    title: 'Geocelestial Website',
+    description: 'A clean, modern business website built with HTML, CSS, and JS.',
+    tech: ['HTML','React','CSS', 'JavaScript'],
+    link: 'https://www.geocelestialltd.co.ke',
+  },
+  
 ];
 
 const cardVariants = {
