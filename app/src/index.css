@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scrollbar-color: #c9fe6e #0a0a0b; scrollbar-width: thin; }
+body { min-width: 320px; }
